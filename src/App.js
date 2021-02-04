@@ -33,6 +33,7 @@ function App() {
     setCurrentPage(selectedPage);
   }
 
+  
   // pagination 
   const offset = currentPage * PER_PAGE; 
   const currentPageData = items.slice(offset, offset + PER_PAGE);
@@ -68,7 +69,7 @@ function App() {
           disabledClassName={"pagination__link--disabled"}
           activeClassName={"pagination__link--active"}
         />
-        
+
       </div>
     );
   }
